@@ -13,7 +13,7 @@
 
     <section>
         <div>
-            Que horas são agora: <input class="text" type="text" id="hora"> hr 
+            Que horas são agora: <input class="text" type="text" id="hora" onkeypress="event.key === 'Enter' ? carregar() : null" > hr 
            <br> <input class="botao" type="button" value="Verificar" onclick="carregar()" >
         </div>
         <div class="msg" id="msg">
