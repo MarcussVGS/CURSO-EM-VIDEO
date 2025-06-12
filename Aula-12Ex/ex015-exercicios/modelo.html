@@ -6,7 +6,7 @@
     <title>Exercicio - Validando Idade</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body onload="iniciar()">
     <header>
         <h1> Validação de Idade </h1>
     </header>
@@ -16,15 +16,15 @@
             Que ano você nasceu: 
                 <input class="txtAno" type="number" id="txtAno" 
                 onkeydown="event.key === 'Enter' ? carregar() : null" >
-            <br> Masculino <input class="radio" type="radio" name="sexo" id="masc"> 
-                 Feminino <input class="radio" type="radio" name="sexo" id="fem">
+            <br> Masculino <input class="radio" type="radio" value="m" name="sexo" id="masc"> 
+                 Feminino <input class="radio" type="radio" value="f" name="sexo" id="fem">
             <br> <input class="botao" type="button" value="Verificar" onclick="carregar()" >
         </div>
         <div class="msg" id="msg">
             Aqui vai aparecer a mensagem
         </div>
         <div id="foto">
-            <img id="imagem" src="feto.webp" alt="Foto da pessoa">
+            <img id="imagem" src="" alt="Foto da pessoa">
         </div>
     </section>
 
