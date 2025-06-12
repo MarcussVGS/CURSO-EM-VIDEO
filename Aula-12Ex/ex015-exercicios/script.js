@@ -1,5 +1,7 @@
 var ano = window.document.getElementById('txtAno')
+/** @type {HTMLInputElement} */
 var masc = window.document.getElementById('masc')
+/** @type {HTMLInputElement} */
 var fem = window.document.getElementById('fem')
 var msg = window.document.getElementById('msg')
 var foto = window.document.getElementById('imagem')
@@ -11,13 +13,13 @@ function iniciar(){
     msg.innerHTML = `Informe o Ano de Nascimento`
     msg.innerHTML += `<br> e selecione o sexo`
     foto.src = 'rainhaeliz.webp'
-    document.body.style.background = '#520c29'
+    document.body.style.background = '#064727'
 }
 function carregar(){
     idade = new Date().getFullYear() - ano.value
-    if (masc.checked == "m"){
+    if (masc.checked == true){
         masculino()
-    } else if (fem.value == "f"){
+    } else if (fem.checked == true){
         feminino()
     } 
     if (idade < 0){
@@ -47,7 +49,7 @@ function masculino(){
     } else  if (idade > 100){
         msg.innerHTML += `<br> Puts, temos uma tartaruga por aqui`
         foto.src = 'rainhaeliz.webp'
-        document.body.style.background = '#0a7a42'
+        document.body.style.background = '#064727'
     } else {
         msg.innerHTML += `<br> Voce nao existe`
         foto.src = ''
@@ -59,26 +61,26 @@ function feminino(){
     if (idade < 1){
         msg.innerHTML += `<br> Ainda um bebezinho`
         foto.src = 'feto.webp'
-        bodyColor = '#f04d91'
+        document.body.style.background = '#f04d91'
     } else if (idade >= 1 && idade < 20 ) {
         msg.innerHTML += `<br> Um bela garota`
         foto.src = 'mulherjovem.webp'
-        bodyColor = '#b6255d'
+        document.body.style.background = '#b6255d'
     } else if (idade >= 20 && idade < 50){
         msg.innerHTML += `<br> Uma grande mulher`
         foto.src = 'mulheradulta.webp'
-        bodyColor = '#8b1848'
+        document.body.style.background = '#8b1848'
     } else if (idade >= 50 && idade <= 100){
         msg.innerHTML += `<br> Uma bela mulher velha`
         foto.src = 'mulheridosa.webp'
-        bodyColor = '#0c2a52'
+        document.body.style.background = '#520c29'
     } else  if (idade > 100){
         msg.innerHTML += `<br> Puts, temos uma tartaruga por aqui`
         foto.src = 'rainhaeliz.webp'
-        bodyColor = '#520c29'
+        document.body.style.background = '#064727'
     } else {
         msg.innerHTML += `<br> Voce não existe`
         foto.src = ''
-        bodyColor = '#0c0c0c'
+        document.body.style.background = '#0c0c0c'
     }
 }
