@@ -21,7 +21,7 @@ function carregar(){
         feminino()
     } 
     if (idade < 0){
-        msg.innerHTML = `informe o Ano de Nascimento <strong> valido </strong>`
+        msg.innerHTML = `informe o Ano de Nascimento <strong> invalido </strong>`
         foto.src = ''
         document.body.style.background = '#0c0c0c'
     }
