@@ -18,5 +18,5 @@ function gerar() {
             text += `${n} x ${c} = ` + auxR
         }
     }
-    document.getElementById('txtTabuada').value = text
+    tab.value = text
 }
