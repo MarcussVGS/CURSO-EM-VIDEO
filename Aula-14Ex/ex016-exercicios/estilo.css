@@ -7,17 +7,16 @@ header{
     text-align: center;
 }
 section{
-
+    text-align: center;
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 300px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 div.inputs{
-    text-align: left;
     font: normal 14pt arial;
     padding: 2px 0px;
 }
