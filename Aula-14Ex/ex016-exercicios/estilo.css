@@ -7,12 +7,37 @@ header{
     text-align: center;
 }
 section{
+
     background: white;
     border-radius: 10px;
     padding: 15px;
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+div.inputs{
+    text-align: left;
+    font: normal 14pt arial;
+    padding: 2px 0px;
+}
+input.txtInputs{
+    font: normal 14pt arial;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px 10px;
+    width: 70px;
+}
+
+
+input.botao{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font: bold 12pt arial;
 }
 footer{
     color: white;

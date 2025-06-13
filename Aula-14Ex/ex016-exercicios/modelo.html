@@ -14,15 +14,15 @@
     <section>
         <div class="inputs">
             <label for="txtInicio">Inicio:</label>
-            <input class="txtInputs" type="number" name="txtInicio" id="txtInicio" >
+            <input class="txtInputs" type="number" id="txtInicio" style="width:80px;" >
         </div>
         <div class="inputs">
             <label for="txtFim">Fim:</label>
-            <input class="txtInputs" type="number" id="txtFim" >
+            <input class="txtInputs" type="number" id="txtFim" style="width: 92px;">
         </div>
         <div class="inputs">
             <label for="txtPasso">Passo:</label>
-            <input class="txtInputs" type="number" id="txtPasso" 
+            <input class="txtInputs" type="number" id="txtPasso" style="width: 70px;"
             onkeydown="event.key === 'Enter' ? contar() : null">
         </div>
         <input class="botao" type="button" value="Contar" id="btnContar" onclick="carregar()" >
