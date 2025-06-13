@@ -14,7 +14,7 @@
     <section>
         <div class="inputs">
             <label for="txtInicio">Inicio:</label>
-            <input class="txtInputs" type="number" id="txtInicio" >
+            <input class="txtInputs" type="number" name="txtInicio" id="txtInicio" >
         </div>
         <div class="inputs">
             <label for="txtFim">Fim:</label>
@@ -25,11 +25,11 @@
             <input class="txtInputs" type="number" id="txtPasso" 
             onkeydown="event.key === 'Enter' ? contar() : null">
         </div>
-        <input class="botao" type="button" value="Contar" id="btnContar" onclick="contar()" >
+        <input class="botao" type="button" value="Contar" id="btnContar" onclick="carregar()" >
         
         <div class="resultado">
             <p></p>
-            <label id="res"> o resultado aparecerá aqui</label>
+            <label id="res"> O resultado aparecerá aqui</label>
         </div>
     </section>
 
