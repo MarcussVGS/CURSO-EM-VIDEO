@@ -6,7 +6,17 @@ function gerar() {
     var c = 1
     var text = ''
     for (c = 1; c <= 10; c++) {
-        text += `${n} x ${c} = ${n * c} \n`
+        var auxR = ``
+        if (n * c < 10) {
+           auxR = `0${n * c} \n`
+        }  else {
+            auxR =`${n * c} \n`
+        }
+        if (c < 10){
+            text += `${n} x 0${c} = ` + auxR
+        }else {
+            text += `${n} x ${c} = ` + auxR
+        }
     }
     document.getElementById('txtTabuada').value = text
 }
