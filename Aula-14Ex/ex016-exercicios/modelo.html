@@ -8,16 +8,28 @@
 </head>
 <body>
     <header>
-        <h1> Titulo </h1>
+        <h1> Vamos Contar </h1>
     </header>
 
     <section>
-        <div>
-            
+        <div class="inputs">
+            <label for="txtInicio">Inicio:</label>
+            <input class="txtInputs" type="number" id="txtInicio" >
         </div>
-
-        <div>
-
+        <div class="inputs">
+            <label for="txtFim">Fim:</label>
+            <input class="txtInputs" type="number" id="txtFim" >
+        </div>
+        <div class="inputs">
+            <label for="txtPasso">Passo:</label>
+            <input class="txtInputs" type="number" id="txtPasso" 
+            onkeydown="event.key === 'Enter' ? contar() : null">
+        </div>
+        <input class="botao" type="button" value="Contar" id="btnContar" onclick="contar()" >
+        
+        <div class="resultado">
+            <p></p>
+            <label id="res"> o resultado aparecerá aqui</label>
         </div>
     </section>
 
