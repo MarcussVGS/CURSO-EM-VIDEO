@@ -8,16 +8,23 @@
 </head>
 <body>
     <header>
-        <h1> Titulo </h1>
+        <h1> Analisador de Numeros </h1>
     </header>
 
     <section>
-        <div>
-            
+        <div class="inputs">
+            <Label>Numero (entre 1 e 100):</Label> <br>
+            <input type="Number" id="txtNumber">
+                <input class="btn" type="button" value="Analisar" onclick="adicionar()">
         </div>
 
-        <div>
+        <div class="textarea">
+            <textarea id="txtNumbers" cols="30" rows="10"></textarea> <br>
+            <input class="btn" type="button" value="Analisar" onclick="analisar()">
+        </div>
 
+        <div class="res">
+            <label id="res"></label>
         </div>
     </section>
 
