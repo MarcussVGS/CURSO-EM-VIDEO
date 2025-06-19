@@ -7,8 +7,8 @@ let numbers = []
 function adicionar(){
     if(isNumber(num.value) && !inLista(num.value, numbers)){
         numbers.push(Number(num.value))
-        lista.value += `${num.value}`
-        lista.value += `. Quantidade: ${numbers.length}\n`
+        lista.value += `Valor: ${num.value}`
+        lista.value += `. Quant.: ${numbers.length}\n`
     } else {
         window.alert(`O valor ${num.value} já existe na lista ou esta fora do limite.`)
     }
@@ -45,15 +45,15 @@ function analisar(){
         return `Ao todo tivemos ${lista.length} numeros cadastrados.`
     }
     function maior(lista){
-        return `O maior valor informado foi ${Math.max(...lista)}`
+        return `O maior valor informado foi ${Math.max(...lista)}.`
     }
     function menor(lista){
-        return `O menor valor informado foi ${Math.min(...lista)}`
+        return `O menor valor informado foi ${Math.min(...lista)}.`
     }
     function soma(lista){
-        return `A soma dos valores informados foi ${lista.reduce((a, b) => a + b)}`
+        return `A soma dos valores informados foi ${lista.reduce((a, b) => a + b)}.`
     }
     function media(lista){
-        return `A media dos valores informados foi ${lista.reduce((a, b) => a + b) / lista.length}`
+        return `A media dos valores informados foi ${lista.reduce((a, b) => a + b) / lista.length}.`
     }   
 
